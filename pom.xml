@@ -44,7 +44,7 @@ agnostic home for software distribution comprehension and audit tools.
   <inceptionYear>2006</inceptionYear>
   <properties>
     <ant.version>1.9.12</ant.version>
-    <javaVersion>1.5</javaVersion>
+    <javaVersion>8</javaVersion>
     <maven.compiler.source>${javaVersion}</maven.compiler.source>
     <maven.compiler.target>${javaVersion}</maven.compiler.target>
     <!-- This is the version of Maven required to use the Rat Maven Plugin -->
@@ -482,6 +482,7 @@ agnostic home for software distribution comprehension and audit tools.
           </dependency>
         </dependencies>
         <executions>
+<!--
           <execution>
             <!-- This checks the source code of our project -->
             <!--
@@ -502,6 +503,7 @@ agnostic home for software distribution comprehension and audit tools.
               </signature>
             </configuration>
           </execution>
+-->
         </executions>
       </plugin>
     </plugins>
