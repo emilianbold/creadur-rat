@@ -38,8 +38,14 @@ public class CDDL1License extends BaseLicense implements IHeaderMatcher {
             + "Common Development and Distribution License (the \"License\")\n"
             + "You may not use this file except in compliance with the License.\n";
 
+    public static final String CDDL1_LICENSE_DEFN_NETBEANS_FIRST_LINE
+            = "Development and Distribution License(\"CDDL\") (collectively, the";
+    public static final String CDDL1_LICENSE_DEFN_NETBEANS_LINK_LINE
+            = "http://www.netbeans.org/cddl-gplv2.html";
+
     private final FullTextMatchingLicense textMatcherBase;
     private final FullTextMatchingLicense textMatcherIllumosStyle;
+    private final SimplePatternBasedLicense textMatcherNetBeansStyle;
 
 
     public CDDL1License() {
@@ -52,16 +58,21 @@ public class CDDL1License extends BaseLicense implements IHeaderMatcher {
         textMatcherIllumosStyle = new FullTextMatchingLicense(MetaData.RAT_LICENSE_FAMILY_CATEGORY_DATUM_CDLL1,
                 MetaData.RAT_LICENSE_FAMILY_NAME_DATUM_CDDL1,
                 "", CDDL1_LICENSE_DEFN_ILLUMOS_STYLE);
+        textMatcherNetBeansStyle = new SimplePatternBasedLicense(MetaData.RAT_LICENSE_FAMILY_CATEGORY_DATUM_CDLL1,
+                MetaData.RAT_LICENSE_FAMILY_NAME_DATUM_CDDL1,
+                "", new String[]{CDDL1_LICENSE_DEFN_NETBEANS_FIRST_LINE, CDDL1_LICENSE_DEFN_NETBEANS_LINK_LINE});
     }
 
     public boolean match(Document subject, String s) throws RatHeaderAnalysisException {
         return textMatcherBase.match(subject, s) ||
+                textMatcherNetBeansStyle.match(subject, s) ||
                 textMatcherIllumosStyle.match(subject, s);
     }
 
     public void reset() {
         textMatcherBase.reset();
         textMatcherIllumosStyle.reset();
+        textMatcherNetBeansStyle.reset();
     }
 
 }
