@@ -41,6 +41,14 @@ public enum RatLicenseFamily {
 			"GNU General Public License, version 3",
 			"GPL3 ",
 			"Note that GPL3 requires a NOTICE. All modifications require notes. See http://www.gnu.org/licenses/gpl-3.0.html."),
+	AGPL3(
+			"GNU Affero General Public License, version 3",
+			"AGPL3 ",
+			"Note that AGPL3 requires a NOTICE. All modifications require notes. See http://www.gnu.org/licenses/agpl-3.0.html."),
+	BSD(
+			"OpenBSD License",
+			"BSD ",
+			"XXX"),
 	MIT(
 			"The MIT License",
 			"MIT  ",

@@ -63,6 +63,8 @@ public class MetaData {
     public static final String RAT_LICENSE_FAMILY_CATEGORY_VALUE_GPL1 ="GPL1 ";
     public static final String RAT_LICENSE_FAMILY_CATEGORY_VALUE_GPL2 ="GPL2 ";
     public static final String RAT_LICENSE_FAMILY_CATEGORY_VALUE_GPL3 = "GPL3 ";
+    public static final String RAT_LICENSE_FAMILY_CATEGORY_VALUE_AGPL3 = "AGPL3";
+    public static final String RAT_LICENSE_FAMILY_CATEGORY_VALUE_BSD = "BSD";
     public static final String RAT_LICENSE_FAMILY_CATEGORY_VALUE_MIT = "MIT  ";
     public static final String RAT_LICENSE_FAMILY_CATEGORY_VALUE_CDDL1 = "CDDL1";
 
@@ -77,6 +79,8 @@ public class MetaData {
     public static final Datum RAT_LICENSE_FAMILY_CATEGORY_DATUM_GPL1 = new Datum(RAT_URL_LICENSE_FAMILY_CATEGORY,RAT_LICENSE_FAMILY_CATEGORY_VALUE_GPL1);
     public static final Datum RAT_LICENSE_FAMILY_CATEGORY_DATUM_GPL2 = new Datum(RAT_URL_LICENSE_FAMILY_CATEGORY,RAT_LICENSE_FAMILY_CATEGORY_VALUE_GPL2);
     public static final Datum RAT_LICENSE_FAMILY_CATEGORY_DATUM_GPL3 = new Datum(RAT_URL_LICENSE_FAMILY_CATEGORY,RAT_LICENSE_FAMILY_CATEGORY_VALUE_GPL3);
+    public static final Datum RAT_LICENSE_FAMILY_CATEGORY_DATUM_AGPL3 = new Datum(RAT_URL_LICENSE_FAMILY_CATEGORY,RAT_LICENSE_FAMILY_CATEGORY_VALUE_AGPL3);
+    public static final Datum RAT_LICENSE_FAMILY_CATEGORY_DATUM_BSD = new Datum(RAT_URL_LICENSE_FAMILY_CATEGORY,RAT_LICENSE_FAMILY_CATEGORY_VALUE_BSD);
     public static final Datum RAT_LICENSE_FAMILY_CATEGORY_DATUM_MIT = new Datum(RAT_URL_LICENSE_FAMILY_CATEGORY,RAT_LICENSE_FAMILY_CATEGORY_VALUE_MIT);
     public static final Datum RAT_LICENSE_FAMILY_CATEGORY_DATUM_CDLL1 = new Datum(RAT_URL_LICENSE_FAMILY_CATEGORY,RAT_LICENSE_FAMILY_CATEGORY_VALUE_CDDL1);
 
@@ -93,6 +97,10 @@ public class MetaData {
             "GNU General Public License, version 2";
     public static final String RAT_LICENSE_FAMILY_NAME_VALUE_GPL_VERSION_3 =
             "GNU General Public License, version 3";
+    public static final String RAT_LICENSE_FAMILY_NAME_VALUE_AGPL_VERSION_3 =
+            "GNU Affero General Public License, version 3";
+    public static final String RAT_LICENSE_FAMILY_NAME_VALUE_BSD =
+            "OpenBSD license";
     public static final String RAT_LICENSE_FAMILY_NAME_VALUE_MIT =
             "The MIT License";
     public static final String RAT_LICENSE_FAMILY_NAME_VALUE_CDDL1 =
@@ -115,6 +123,10 @@ public class MetaData {
             RAT_LICENSE_FAMILY_NAME_DATUM_GPL_VERSION_2 = new Datum(RAT_URL_LICENSE_FAMILY_NAME, RAT_LICENSE_FAMILY_CATEGORY_VALUE_GPL2);
     public static final Datum
             RAT_LICENSE_FAMILY_NAME_DATUM_GPL_VERSION_3 = new Datum(RAT_URL_LICENSE_FAMILY_NAME, RAT_LICENSE_FAMILY_NAME_VALUE_GPL_VERSION_3);
+    public static final Datum
+            RAT_LICENSE_FAMILY_NAME_DATUM_AGPL_VERSION_3 = new Datum(RAT_URL_LICENSE_FAMILY_NAME, RAT_LICENSE_FAMILY_NAME_VALUE_AGPL_VERSION_3);
+    public static final Datum
+            RAT_LICENSE_FAMILY_NAME_DATUM_BSD = new Datum(RAT_URL_LICENSE_FAMILY_NAME, RAT_LICENSE_FAMILY_NAME_VALUE_BSD);
     public static final Datum
             RAT_LICENSE_FAMILY_NAME_DATUM_MIT = new Datum(RAT_URL_LICENSE_FAMILY_NAME, RAT_LICENSE_FAMILY_NAME_VALUE_MIT);
     public static final Datum

@@ -39,6 +39,8 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.apache.rat.analysis.license.AGPL3License;
+import org.apache.rat.analysis.license.OpenBSDLicense;
 
 
 /**
@@ -60,6 +62,8 @@ public class Defaults {
                     new GPL1License(),
                     new GPL2License(),
                     new GPL3License(),
+                    new AGPL3License(),
+                    new OpenBSDLicense(),
                     new MITLicense(),
                     new W3CLicense(),
                     new W3CDocLicense(),
@@ -79,6 +83,8 @@ public class Defaults {
                     MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_GPL_VERSION_1, //
                     MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_GPL_VERSION_2, //
                     MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_GPL_VERSION_3, //
+                    MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_AGPL_VERSION_3, //
+                    MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_BSD, //
                     MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_MIT, //
                     MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_MODIFIED_BSD_LICENSE, //
                     MetaData.RAT_LICENSE_FAMILY_NAME_VALUE_OASIS_OPEN_LICENSE, //
